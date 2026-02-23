@@ -33,7 +33,7 @@ def simhash(word_list):
     
     fingerprint = 0
     for i in range(64):
-        if sim[i] > 0:
+        if sim > 0:
             fingerprint = fingerprint | (1 << i)
 
     return fingerprint
