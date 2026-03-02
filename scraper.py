@@ -7,6 +7,8 @@ import sys
 
 
 url = sys.argv[1]
+if not url.startswith(("https://","http://")):
+    url = "https://" + url
 
 headers = {
     'User-Agent': 'ScrapingBee/1.0 (https://www.scrapingbee.com; support@scrapingbee.com)'   
